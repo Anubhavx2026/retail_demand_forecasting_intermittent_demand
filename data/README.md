@@ -1,7 +1,7 @@
 # Dataset
 
-The original dataset used in this project belongs to a major Consumer Packaged Goods (CPG) company and cannot be publicly shared due to confidentiality.
+The dataset used in this project was provided by a major Consumer Packaged Goods (CPG) company during an internship.
 
-This repository contains the complete preprocessing, exploratory analysis, feature engineering, and forecasting pipeline.
+Due to confidentiality and data-sharing restrictions, the raw dataset cannot be made publicly available.
 
-To reproduce the workflow, replace the dataset with one following the documented schema.
+The repository contains the complete preprocessing, exploratory analysis, feature engineering, and forecasting pipeline. The notebooks can be adapted to any dataset following a similar schema.
