@@ -84,3 +84,90 @@ The primary objectives of this project are:
 > **Confidentiality Notice**
 >
 > The original dataset cannot be shared publicly due to confidentiality agreements. All company-specific identifiers have been removed, and no proprietary business data is included in this repository.
+
+---
+
+# ⚙️ Project Workflow
+
+```mermaid
+flowchart TD
+    A[Raw Daily Retail Transactions] --> B[Data Cleaning & Validation]
+    B --> C[Weekly Aggregation]
+    C --> D[Exploratory Data Analysis]
+    D --> E[Demand Characterization]
+    E --> F[Feature Engineering]
+    F --> G[Forecasting Models]
+    G --> H[Rolling-Origin Evaluation]
+    H --> I[Model Comparison]
+    I --> J[Business Insights]
+```
+The project follows a complete retail demand forecasting pipeline, beginning with raw daily transactional data and progressing through preprocessing, exploratory analysis, feature engineering, forecasting, and model evaluation. Each stage builds upon insights from the previous step, resulting in a business-oriented forecasting framework for intermittent retail demand.
+---
+
+# 🔬 Methodology
+
+The project was executed in the following stages:
+
+### 1. Data Preparation
+
+- Cleaned and validated raw retail transaction data.
+- Aggregated daily transactions into weekly observations.
+- Selected **Store × Product × Week** as the forecasting granularity to balance sparsity and temporal stability.
+
+---
+
+### 2. Exploratory Data Analysis
+
+Comprehensive exploratory analysis was performed to understand demand behavior and identify the major factors influencing retail sales.
+
+The analysis included:
+
+- Demand distribution analysis
+- Promotion detection
+- Discount depth analysis
+- Store-level demand analysis
+- Product-level demand analysis
+- Holiday impact analysis
+- ADI–CV² demand classification
+- Forecastability assessment
+
+---
+
+### 3. Feature Engineering
+
+Business-aware features were engineered to improve forecasting performance.
+
+Examples include:
+
+- Promotion flags
+- Price drop percentage
+- Discount buckets
+- Holiday indicators
+- Holiday window features
+- Weekly average price
+- Rolling statistics
+- Temporal variables
+
+---
+
+### 4. Forecasting
+
+Multiple forecasting approaches were implemented and benchmarked:
+
+- Moving Average
+- Croston's Method
+- Syntetos–Boylan Approximation (SBA)
+- Teunter–Syntetos–Babai (TSB)
+
+---
+
+### 5. Evaluation
+
+Forecasts were evaluated using rolling-origin evaluation to simulate real-world forecasting scenarios.
+
+Evaluation metrics included:
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- Forecast Bias
+- Runtime
